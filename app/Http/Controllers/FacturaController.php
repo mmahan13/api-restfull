@@ -16,7 +16,8 @@ class FacturaController extends Controller
     public function getCabeceraFacturas()
     {
         
-        return Factura::all();
+        $d['facturas'] = Factura::all();
+        return $d;
     }
 
     /**

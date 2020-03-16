@@ -20,3 +20,9 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 //Factura
 Route::get('facturas', 'FacturaController@getCabeceraFacturas');
 Route::get('lineas', 'FacturaController@getLineasFacturas');
+
+//clientes 
+Route::get('clientes', 'ClientesController@getClientes');
+
+//productos 
+Route::get('productos', 'ProductosController@getProductos');
